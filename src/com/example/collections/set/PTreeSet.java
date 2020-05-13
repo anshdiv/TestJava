@@ -1,6 +1,9 @@
 package com.example.collections.set;
 
+import java.util.Iterator;
 import java.util.TreeSet;
+
+import com.example.BaseCollection;
 
 /**
  * 
@@ -9,7 +12,7 @@ import java.util.TreeSet;
  * TreeSet store objects in sorted form (Ascending order)
  *
  */
-public class PTreeSet {
+public class PTreeSet implements BaseCollection{
 
 	private TreeSet<String> set;
 	
@@ -38,5 +41,13 @@ public class PTreeSet {
 	
 	public void add(String name) {
 		set.add(name);
+	}
+	
+	@Override
+	public void iterate() {
+		 Iterator<String> iterator= set.iterator();
+		  while(iterator.hasNext()) {
+			  System.out.println(iterator.next());
+		  }
 	}
 }

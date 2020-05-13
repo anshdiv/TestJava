@@ -1,8 +1,11 @@
 package com.example.collections.list;
 
+import java.util.Iterator;
 import java.util.LinkedList;
 
-public class PLinkedList {
+import com.example.BaseCollection;
+
+public class PLinkedList implements BaseCollection{
 
 	private LinkedList<String> students;
 	
@@ -36,5 +39,13 @@ public class PLinkedList {
 	
 	public void removeLast() {
 		students.removeLast();
+	}
+	
+	@Override
+	public void iterate() {
+		 Iterator<String> iterator= students.iterator();
+		  while(iterator.hasNext()) {
+			  System.out.println(iterator.next());
+		  }
 	}
 }

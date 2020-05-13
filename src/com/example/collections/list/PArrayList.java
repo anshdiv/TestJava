@@ -1,9 +1,12 @@
 package com.example.collections.list;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
-public class PArrayList {
+import com.example.BaseCollection;
+
+public class PArrayList implements BaseCollection {
 
 	private ArrayList<String> students;
 	
@@ -37,6 +40,14 @@ public class PArrayList {
 	
 	public void addItem(int position,String name) {
 		students.add(position, name);
+	}
+
+	@Override
+	public void iterate() {
+		 Iterator<String> iterator= students.iterator();
+		  while(iterator.hasNext()) {
+			  System.out.println(iterator.next());
+		  }
 	}
 	
 }

@@ -1,8 +1,11 @@
 package com.example.collections.list;
 
+import java.util.Iterator;
 import java.util.Vector;
 
-public class PVector {
+import com.example.BaseCollection;
+
+public class PVector implements BaseCollection{
 
 	private Vector<String> students;
 	
@@ -28,6 +31,14 @@ public class PVector {
 	
 	public void removeItem(int position) {
 		students.remove(position);
+	}
+	
+	@Override
+	public void iterate() {
+		 Iterator<String> iterator= students.iterator();
+		  while(iterator.hasNext()) {
+			  System.out.println(iterator.next());
+		  }
 	}
 	
 }

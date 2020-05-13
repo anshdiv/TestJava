@@ -1,6 +1,9 @@
 package com.example.collections.set;
 
+import java.util.Iterator;
 import java.util.LinkedHashSet;
+
+import com.example.BaseCollection;
 
 /**
  * 
@@ -9,7 +12,7 @@ import java.util.LinkedHashSet;
  * LinkedHashSet is Similar to HashSet but it maintains the Insertion Order
  *
  */
-public class PLinkedHashSet {
+public class PLinkedHashSet implements BaseCollection{
 
 	private LinkedHashSet<String> set;
 	
@@ -38,5 +41,13 @@ public class PLinkedHashSet {
 	
 	public void add(String name) {
 		set.add(name);
+	}
+	
+	@Override
+	public void iterate() {
+		 Iterator<String> iterator= set.iterator();
+		  while(iterator.hasNext()) {
+			  System.out.println(iterator.next());
+		  }
 	}
 }

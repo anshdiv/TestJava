@@ -1,6 +1,9 @@
 package com.example.collections.set;
 
 import java.util.HashSet;
+import java.util.Iterator;
+
+import com.example.BaseCollection;
 /**
  * 
  * @author Anshul Gour
@@ -8,7 +11,7 @@ import java.util.HashSet;
  * HashSet store value with Hashing technique hence printing values doesn't assure the sequence.
  *
  */
-public class PHashSet {
+public class PHashSet implements BaseCollection{
 
 	private HashSet<String> set;
 	
@@ -37,5 +40,13 @@ public class PHashSet {
 	
 	public void add(String name) {
 		set.add(name);
+	}
+	
+	@Override
+	public void iterate() {
+		 Iterator<String> iterator= set.iterator();
+		  while(iterator.hasNext()) {
+			  System.out.println(iterator.next());
+		  }
 	}
 }
