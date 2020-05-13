@@ -1,17 +1,16 @@
 package com.example.collections.list;
 
-import java.util.List;
 import java.util.Vector;
 
 public class PVector {
 
-	private List<String> students;
+	private Vector<String> students;
 	
 	PVector(){
 		createData();
 	}
 	
-	void createData() {
+	public void createData() {
 		students = new Vector<String>();
 		students.add("Anshul");
 		students.add("Rahul");
@@ -19,7 +18,7 @@ public class PVector {
 		students.add("Shubham");
 	}
 	
-	public List<String> getStudents(){
+	public Vector<String> getStudents(){
 		return students;
 	}
 	
