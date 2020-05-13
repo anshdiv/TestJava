@@ -1,13 +1,16 @@
 package com.example.collections.list;
 
 import java.util.LinkedList;
-import java.util.List;
 
 public class PLinkedList {
 
-	List<String> students;
+	private LinkedList<String> students;
 	
-	void createData() {
+	public PLinkedList() {
+		students = new LinkedList<String>();
+	}
+	
+	public void createData() {
 		students = new LinkedList<String>();
 		students.add("Anshul");
 		students.add("Rahul");
@@ -15,15 +18,23 @@ public class PLinkedList {
 		students.add("Shubham");
 	}
 	
-	List<String> getStudents(){
+	public LinkedList<String> getStudents(){
 		return students;
 	}
 	
-	void addItem(String name) {
-		students.add(name);
+	public void addFirst(String name) {
+		students.addFirst(name);
 	}
 	
-	void removeItem(int position) {
-		students.remove(position);
+	public void addLast(String name) {
+		students.addLast(name);
+	}
+	
+	public void removeFirst() {
+		students.removeFirst();
+	}
+	
+	public void removeLast() {
+		students.removeLast();
 	}
 }

@@ -5,7 +5,7 @@ import java.util.List;
 
 public class PArrayList {
 
-	private List<String> students;
+	private ArrayList<String> students;
 	
 	public PArrayList(){
 		students = new ArrayList<String>();
