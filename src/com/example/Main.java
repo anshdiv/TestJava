@@ -2,6 +2,9 @@ package com.example;
 
 import com.example.collections.list.PArrayList;
 import com.example.collections.list.PLinkedList;
+import com.example.collections.map.HashMapDemo;
+import com.example.collections.map.LinkedHashMapDemo;
+import com.example.collections.map.TreeMapDemo;
 import com.example.collections.queue.ArrayQueueDemo;
 import com.example.collections.queue.PriorityQueueDemo;
 import com.example.collections.set.PHashSet;
@@ -156,5 +159,66 @@ public class Main {
 		arrayDeque.pollLast();
 		System.out.println("Data after removing Last");
 		arrayDeque.iterate();
+		
+		
+		System.out.println();
+        System.out.println("------- HashMap ------");
+        System.out.println();
+        
+        
+        HashMapDemo hashMapDemo = new HashMapDemo();
+		System.out.println(" Initial Size of Map "+hashMapDemo.getMap().size());
+		hashMapDemo.createData();
+		System.out.println("Size of Map After adding data "+hashMapDemo.getMap().size());
+		System.out.println("Data ");
+		hashMapDemo.show();
+		hashMapDemo.put("5", "New Student");;
+		System.out.println("Data after adding New Student");
+		hashMapDemo.show();
+		hashMapDemo.remove("1");
+		System.out.println("Data after removing RollNo 1 Student");
+		hashMapDemo.show();
+		System.out.println("Roll No 3 Student Name: "+hashMapDemo.get("3"));
+		
+		
+
+		System.out.println();
+        System.out.println("------- TreeMap ------");
+        System.out.println();
+        
+        
+        TreeMapDemo treeMapDemo = new TreeMapDemo();
+		System.out.println(" Initial Size of Map "+treeMapDemo.getMap().size());
+		treeMapDemo.createData();
+		System.out.println("Size of Map After adding data "+treeMapDemo.getMap().size());
+		System.out.println("Data ");
+		treeMapDemo.show();
+		treeMapDemo.put("5", "New Student");;
+		System.out.println("Data after adding New Student");
+		treeMapDemo.show();
+		treeMapDemo.remove("1");
+		System.out.println("Data after removing RollNo 1 Student");
+		treeMapDemo.show();
+		System.out.println("Roll No 3 Student Name: "+treeMapDemo.get("3"));
+		
+		
+		System.out.println();
+        System.out.println("------- LinkedHashMap ------");
+        System.out.println();
+        
+        
+        LinkedHashMapDemo linkedHashMapDemo = new LinkedHashMapDemo();
+		System.out.println(" Initial Size of Map "+linkedHashMapDemo.getMap().size());
+		linkedHashMapDemo.createData();
+		System.out.println("Size of Map After adding data "+linkedHashMapDemo.getMap().size());
+		System.out.println("Data ");
+		linkedHashMapDemo.show();
+		linkedHashMapDemo.put("5", "New Student");;
+		System.out.println("Data after adding New Student");
+		linkedHashMapDemo.show();
+		linkedHashMapDemo.remove("1");
+		System.out.println("Data after removing RollNo 1 Student");
+		linkedHashMapDemo.show();
+		System.out.println("Roll No 3 Student Name: "+linkedHashMapDemo.get("3"));
 	}
 }
