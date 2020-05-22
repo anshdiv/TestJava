@@ -1,4 +1,4 @@
-package com.example.lambda;
+package com.example.java8.lambda;
 
 public class EmptyException extends Exception {
 

@@ -1,4 +1,4 @@
-package com.example.lambda;
+package com.example.java8.lambda;
 
 @FunctionalInterface
 public interface NumericTest2 {
