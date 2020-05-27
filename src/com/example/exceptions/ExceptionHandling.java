@@ -86,4 +86,14 @@ public class ExceptionHandling {
 	public void throwsException() throws IllegalAccessException {
 		throw new IllegalAccessException("Throw IllegalException Demo");
 	}
+	
+	
+	public void customException(String name) throws NameNotFoundException {
+		if(name==null) {
+			throw new NameNotFoundException("Name cannot be null");
+		}else {
+			System.out.println(name);
+		}
+	}
+	
 }
