@@ -1,15 +1,15 @@
 package com.example;
 
-import com.example.collections.list.PArrayList;
-import com.example.collections.list.PLinkedList;
-import com.example.collections.map.HashMapDemo;
-import com.example.collections.map.LinkedHashMapDemo;
-import com.example.collections.map.TreeMapDemo;
-import com.example.collections.queue.ArrayQueueDemo;
-import com.example.collections.queue.PriorityQueueDemo;
-import com.example.collections.set.PHashSet;
-import com.example.collections.set.PLinkedHashSet;
-import com.example.collections.set.PTreeSet;
+import com.example.collections.lists.PArrayList;
+import com.example.collections.lists.PLinkedList;
+import com.example.collections.maps.HashMapDemo;
+import com.example.collections.maps.LinkedHashMapDemo;
+import com.example.collections.maps.TreeMapDemo;
+import com.example.collections.queues.ArrayQueueDemo;
+import com.example.collections.queues.PriorityQueueDemo;
+import com.example.collections.sets.PHashSet;
+import com.example.collections.sets.PLinkedHashSet;
+import com.example.collections.sets.PTreeSet;
 
 public class Main {
 
