@@ -1,0 +1,15 @@
+
+template: Hi, %s is Learning Java
+
+defaultName: Stranger
+
+logging:
+  level: INFO
+  loggers:
+    com.quovantis: DEBUG
+
+server:
+  type: simple
+  connector:
+    type: http
+    port: 8080
