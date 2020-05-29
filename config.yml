@@ -13,3 +13,16 @@ server:
   connector:
     type: http
     port: 8080
+
+database:
+  # the name of your JDBC driver
+  driverClass: com.microsoft.sqlserver.jdbc.SQLServerDriver
+
+  # the username
+  user: sa
+
+  # the password
+  password: anshul.123
+
+  # the JDBC URL
+  url: jdbc:sqlserver://localhost;databaseName=JAVA_LEARNING;
