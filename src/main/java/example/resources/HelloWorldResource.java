@@ -2,7 +2,10 @@ package example.resources;
 
 import com.codahale.metrics.annotation.Timed;
 import example.api.Saying;
+import example.core.models.User;
+import io.dropwizard.auth.Auth;
 
+import javax.annotation.security.RolesAllowed;
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
@@ -26,10 +29,11 @@ public class HelloWorldResource {
     }
 
 
+    @RolesAllowed("ADMIN")
     @GET
     @Timed
-    public Saying sayHello(@QueryParam("name") Optional<String> name) {
-        final String value = String.format(template, name.orElse(defaultName));
+    public Saying sayHello(@QueryParam("name") Optional<String> name, @Auth User user) {
+        final String value = String.format(template, name.orElse(user.getUserName()));
         return new Saying(counter.incrementAndGet(), value);
     }
 
