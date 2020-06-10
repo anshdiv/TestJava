@@ -10,9 +10,9 @@ public class ExceptionDemo {
 		simpleException.simpleException();
 		
 		UIUtils.addSection("Multiple Catches Handling");
-		String []array0 = {};
-		String []array1 = {"TestArg"};
-		String []array2 = {"Arg1","Arg2"};
+		String [] array0 = {};
+		String [] array1 = {"TestArg"};
+		String [] array2 = {"Arg1","Arg2"};
 		simpleException.multipleCatches(array0);
 		simpleException.multipleCatches(array1);
 		

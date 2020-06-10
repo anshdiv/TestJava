@@ -12,8 +12,8 @@ public class AggregationDemo {
 		Employee e = new Employee(111, "varun", address1);
 		Employee e2 = new Employee(112, "arun", address2);
 
-		e.display();
-		e2.display();
+		e.toString();
+		e2.toString();
 
 	}
 }

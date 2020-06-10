@@ -12,8 +12,8 @@ public class Employee {
 		this.address = address;
 	}
 
-	void display() {
+	public String toString() {
 		System.out.println(id + " " + name);
-		System.out.println(address.city + " " + address.state + " " + address.country);
+		return address.getCity() + " " + address.getState() + " " + address.getCountry();
 	}
 }

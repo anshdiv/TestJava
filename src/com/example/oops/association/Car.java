@@ -2,34 +2,33 @@ package com.example.oops.association;
 
 public class Car {
 
-	private String carName;
-	private int carId;
+	private String name;
+	private int id;
 	
 	
 	public Car(String name, int id) {
-		super();
-		this.carName = name;
-		this.carId = id;
+		this.name = name;
+		this.id = id;
 	}
 
 
 	public String getCarName() {
-		return carName;
+		return name;
 	}
 
 
 	public void setCarName(String carName) {
-		this.carName = carName;
+		this.name = carName;
 	}
 
 
 	public int getCarId() {
-		return carId;
+		return id;
 	}
 
 
 	public void setCarId(int carId) {
-		this.carId = carId;
+		this.id = carId;
 	}
 
 	

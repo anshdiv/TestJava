@@ -13,7 +13,7 @@ public class ExceptionHandling {
 		}
 	}
 
-	public void multipleCatches(String[] args) {
+	public void multipleCatches(final String[] args) {
 		try {
 			int a = args.length;
 			System.out.println("a = " + a);
@@ -30,7 +30,7 @@ public class ExceptionHandling {
 		System.out.println("After try/catch block");
 	}
 
-	public void exceptionWithFinally(String[] args) {
+	public void exceptionWithFinally(final String[] args) {
 		try {
 			int a = args.length;
 			System.out.println("a = " + a);
@@ -49,7 +49,7 @@ public class ExceptionHandling {
 		System.out.println("After try/catch block");
 	}
 
-	public void nestedException(String[] args) {
+	public void nestedException(final String[] args) {
 		try {
 			int a = args.length;
 			System.out.println("a = " + a);
@@ -88,7 +88,7 @@ public class ExceptionHandling {
 	}
 	
 	
-	public void customException(String name) throws NameNotFoundException {
+	public void customException(final String name) throws NameNotFoundException {
 		if(name==null) {
 			throw new NameNotFoundException("Name cannot be null");
 		}else {

@@ -18,6 +18,10 @@ public class Driver extends Car {
 	}
 
 
+	@Override
+	public String toString() {
+		return getDriverName()+" is a driver of car Id: "+getCarId();
+	}
 	
 
 }
