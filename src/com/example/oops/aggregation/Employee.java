@@ -2,9 +2,9 @@ package com.example.oops.aggregation;
 
 public class Employee {
 
-	int id;
-	String name;
-	Address address;
+	private int id;
+	private String name;
+	private Address address;
 
 	public Employee(int id, String name, Address address) {
 		this.id = id;
@@ -14,6 +14,6 @@ public class Employee {
 
 	void display() {
 		System.out.println(id + " " + name);
-		System.out.println(address.city + " " + address.state + " " + address.country);
+		System.out.println(address.getCity() + " " + address.getState() + " " + address.getCountry());
 	}
 }

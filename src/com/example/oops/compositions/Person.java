@@ -5,9 +5,9 @@ public class Person {
 	 //composition has-a relationship
     private Job job;
    
-    public Person(){
+    public Person(long salary){
         this.job=new Job();
-        job.setSalary(1000L);
+        job.setSalary(salary);
     }
     public long getSalary() {
         return job.getSalary();
